@@ -52,4 +52,4 @@ You can even mix both formats, although it's probably a bad idea.
 
 ## Disclaimer
 
-This plugin is a fork of **autodotenv** plugin that is fork of the **dotenv** Zsh plugin. Is a simple project with optional .env load.
+This plugin is a fork of [nocttuam/autodotenv](https://github.com/nocttuam/autodotenv) plugin that is fork of the **dotenv** Zsh plugin. Is a simple project with optional .env load.
