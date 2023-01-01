@@ -6,7 +6,7 @@ function askYesNo {
     echo -n "$1 [Yes/no]: "
     read -r INPUT
 
-    if [[ "$INPUT" =~ ^[yY].{2}$ || "$INPUT" == "" ]]; then
+    if [[ "$INPUT" =~ ^[yY](es)?{1}$ || "$INPUT" == "" ]]; then
         echo '  YES'
         ANSWER=true
     else
