@@ -20,6 +20,10 @@ And add the plugin to your `.zshrc`:
 plugins=(... autodotenv)
 ```
 
+### zap
+
+plug 'undg/zsh-autodotenv'
+
 ## Usage
 
 Create `.env` file inside your project root directory and put your ENV variables there.
@@ -40,10 +44,12 @@ PORT=3001
 ```
 You can even mix both formats, although it's probably a bad idea.
 
+![image](https://user-images.githubusercontent.com/5306983/210185901-c2d8d2c3-7c66-4d52-8a66-79fb9ef017fb.png)
+
 ## Version Control
 
 **It's strongly recommended to add `.env` file to `.gitignore`**, because usually it contains sensitive information such as your credentials, secret keys, passwords etc. You don't want to commit this file, it's supposed to be local only.
 
 ## Disclaimer
 
-This is plugin is a fork of the **dotenv** Zsh plugin. Is a simple project with optional .env load.
+This plugin is a fork of **autodotenv** plugin that is fork of the **dotenv** Zsh plugin. Is a simple project with optional .env load.
