@@ -7,10 +7,10 @@ function askYesNo {
     read -r INPUT
 
     if [[ "$INPUT" =~ ^[yY]$ || "$INPUT" = ^$ ]]; then
-        echo '  yes'
+        echo '  YES'
         ANSWER=true
     else
-        echo '  No'
+        echo '  NO'
         ANSWER=false
     fi
     echo ''
