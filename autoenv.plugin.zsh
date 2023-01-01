@@ -3,16 +3,17 @@
 ANSWER=false
 
 function askYesNo {
-    echo -n " $1 [Yes/no]: "
+    echo -n "  $1 [Yes/no]: "
     read -r INPUT
 
     if [[ "$INPUT" =~ ^[yY]$ || "$INPUT" = ^$ ]]; then
-        echo 'yes'
+        echo '  yes'
         ANSWER=true
     else
-        echo 'No'
+        echo '  No'
         ANSWER=false
     fi
+    echo ''
 }
 
 function source_env() {
