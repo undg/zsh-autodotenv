@@ -6,12 +6,11 @@ function askYesNo {
     echo -n " $1 [Yes/no]: "
     read -r INPUT
 
-    echo ${INPUT}
     if [[ "$INPUT" =~ ^[yY]$ ]]; then
-        echo 'yep'
+        echo 'yes'
         ANSWER=true
     else
-        echo 'noop'
+        echo 'No'
         ANSWER=false
     fi
 }
@@ -23,7 +22,7 @@ function source_env() {
 
         askYesNo "Load environment variables used in .env file?" true
 
-        if [ "$ANSWER" = true ]; then
+        if [[ "$ANSWER" = true ]]; then
             echo "Loading .env file..."
             if [[ -o a ]]; then
                 source .env
